@@ -25,8 +25,8 @@ const useMap = () => {
       container: containerRef.current,
       style: `${process.env.NEXT_PUBLIC_MAPBOX_STYLE}`,
       center: [128.522175, 37.087694],
-      zoom: 18,
-      pitch: 50,
+      zoom: 15,
+      pitch: 60,
     });
 
     setMap(map);

@@ -9,8 +9,8 @@ const pretendard = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Wind Turbine Dashboard System",
-  description: "Wind Turbine Dashboard System",
+  title: "AI-Powered Wind Power ENG",
+  description: "AI-Powered Wind Power ENG",
 };
 
 export default function RootLayout({
