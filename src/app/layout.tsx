@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="ko">
       <head>
         <link rel="shortcut icon" href="/favicon.ico" sizes="any" />
-        <link href="https://api.mapbox.com/mapbox-gl-js/v3.15.0/mapbox-gl.css" rel="stylesheet" />
+        {/* <link href="https://api.mapbox.com/mapbox-gl-js/v3.15.0/mapbox-gl.css" rel="stylesheet" /> */}
       </head>
       <body className={`${pretendard.className}`}>{children}</body>
     </html>

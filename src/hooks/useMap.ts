@@ -17,6 +17,7 @@ const useMap = () => {
     [37.092560140962846, 128.52334363401536],
     [37.08985107848464, 128.5314610528353],
   ];
+  const zOffsets: number[] = [630, 710, 670, 600, 750];
 
   const initMap = () => {
     if (!containerRef.current) return;
@@ -26,7 +27,8 @@ const useMap = () => {
       style: `${process.env.NEXT_PUBLIC_MAPBOX_STYLE}`,
       center: [128.522175, 37.087694],
       zoom: 15,
-      pitch: 60,
+      pitch: 75,
+      bearing: 40,
     });
 
     setMap(map);
@@ -39,7 +41,7 @@ const useMap = () => {
   const onMapLoaded = (map: mapboxgl.Map) => {
     mapSources.forEach((source) => map.addSource(...source));
     mapLayers.forEach((layer) => map.addLayer(layer));
-    coords.forEach(([y, x], i) => map.addLayer(createCustomLayer(map, `${i}`, [x, y], [630, 710, 670, 600, 750][i])));
+    coords.forEach(([y, x], i) => map.addLayer(createCustomLayer(map, `${i}`, [x, y], zOffsets[i])));
   };
 
   return { containerRef };

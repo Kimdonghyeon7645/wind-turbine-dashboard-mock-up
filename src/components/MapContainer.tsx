@@ -5,7 +5,7 @@ import useMap from "@/hooks/useMap";
 const MapContainer = () => {
   const { containerRef } = useMap();
 
-  return <div ref={containerRef} className="h-svh w-vw" />;
+  return <div ref={containerRef} className="h-svh w-vw overflow-hidden" />;
 };
 
 export default MapContainer;
