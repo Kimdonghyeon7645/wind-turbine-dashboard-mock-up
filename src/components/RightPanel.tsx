@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const RightPanel = () => {
   return (
     <div className="absolute z-10 top-12 right-1 w-95">
@@ -75,7 +73,7 @@ const RightPanel = () => {
             </div>
             <div>·</div>
             <div>
-              Developey by <span className="text-[#ffffff55]">NINEWATT Inc.</span>
+              Developed by <span className="text-[#ffffff55]">NINEWATT Inc.</span>
             </div>
           </div>
         </div>
